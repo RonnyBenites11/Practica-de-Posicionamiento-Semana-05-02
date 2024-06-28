@@ -1,0 +1,47 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    height: 2000px; 
+    padding: 50px;
+  }
+  
+  .static {
+    position: static;
+    background-color: lightgray;
+  }
+  
+  .relative {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: lightblue;
+  }
+  
+  .absolute {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: lightgreen;
+  }
+  
+  .fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: lightcoral;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    background-color: lightgoldenrodyellow;
+  }
+  /* Fixed: no respeta su ancestro se sale siempre un ejemplo claro son los chatbots
+o los botones de wsp */
+/* sticky: se comporta como relative hasta que alcanza un umbral
+ definido, generalmente relacionado con el desplazamiento del 
+ usuario, momento en el cual se comporta como fixed y se fija en su lugar dentro de su contenedor padre. */
